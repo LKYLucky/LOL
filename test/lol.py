@@ -1,7 +1,7 @@
 import random
 import math
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 # this function calculates the limiting probability
 def p(x): 
@@ -33,8 +33,8 @@ for i in range(n-1):
         x[i+1] = x[i]
         
 # plot N(2) distribution
-#plt.hist(x, bins = 100)
-#plt.show() 
+plt.hist(x, bins = 100)
+plt.show() 
 # choose N(2) = k
 k = x[n-1]
 print("number of particles:", int(k))
